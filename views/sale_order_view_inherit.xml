@@ -1,0 +1,13 @@
+<odoo>
+    <record id="view_quotation_tree_with_onboarding_inherit" model="ir.ui.view">
+        <field name="name">sale.order.tree.inherit</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_quotation_tree_with_onboarding"/>
+        <field name="arch" type="xml">
+            <!-- Adiciona após o primeiro campo -->
+            <xpath expr="//tree/field[1]" position="after">
+                <field name="nome_obra" string="Nome da Obra"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
