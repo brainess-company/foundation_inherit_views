@@ -8,7 +8,7 @@ class AccountMove(models.Model):
     nome_obra = fields.Char(
         string='Nome da Obra',
         compute='_compute_nome_obra',
-        store=True,
+        store=False,
         readonly=True
     )
 
